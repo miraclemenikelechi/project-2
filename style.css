@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    height: 100%;
+
+}
+.header-wrapper {
+    display: grid;
+}
+.header-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    background-color: #eafbf1;
+   padding-left: 200px;
+   padding-top: 20px;
+
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 120px 0 120px;
+}
+.header-right {
+ display:grid;
+ place-items: center;
+}
+ ol li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.link {
+    color: green;
+    font-size: 18px;
+}
+.link:hover {
+color: black;
+}
+.button {
+    border: 1px solid green;
+    padding: 4px 3px;
+    color: green;
+    font-size: 18px;
+}
+.button:hover {
+    box-shadow: 10px 10px 5px green;
+}
+.article-wrapper {
+    display: grid;
+    padding: 70px 300px 100px 200px;
+    background-color: #eafbf1;
+    place-items: center;
+}
+.article {
+    display: grid;
+    place-items: center;
+    padding-top: 30px;
+}
+.article-title {
+    font-weight: 700;
+    font-size: 70px;
+    padding-left: 70px;
+}
+.article-des {
+    width: 500px;
+    font-size: 18px;
+}
+.article-subheading {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 100px;
+}
+
+.description{
+    width: 350px;
+    font-size: 18px;
+    line-height: 30px;
+    color: black;
+}
+.border-plan {
+    border: 1px solid green;
+    height: 700px;
+    width: 420px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+.title {
+    background-color: #00ad6a;
+    color: white;
+    padding: 2px;
+    font-size: 18px;
+    text-align: center;
+}
+.business-plan {
+    color: #00ad6a;
+    font-size: 70px;
+    font-weight: 700;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.amount{
+    font-size: 24px;
+    color: gray;
+    margin-left: 10px;
+    text-align: center;
+}
+.get-text {
+    margin-top: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+.get {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.form {
+font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.page-text {
+    font-size: 18px;
+    color: #00ad6a;
+}
+.part {
+    margin-top: 160px;
+}
+.now-text {
+    margin-top: 25px;
+    border: 1px solid black;
+    width: 200px;
+    padding: 12px;
+    margin-left: 110px;
+    margin-right: 15px;
+    background-color: #1fe374;
+    color: black;
+    font-size: 18px;
+    font-size: 18px;
+    text-align: center;
+}
+.sub-title {
+    border: 1px solid #d6dae5;
+    height: 500px;
+    text-align: center;
+    width: 420px;
+    margin-top: 70px;
+    background-color: white;
+    border-radius: 5px;
+}
+.title-part {
+        background-color:#f2f3f3;
+        padding: 8px;
+        font-size: 18px;
+}
+.business-text {
+        color: #00ad6a;
+        font-size: 50px;
+        font-weight: 400;
+        margin-left: 20px;
+    }
+.why-des {
+    margin-top: 50px;
+}
+.text-gray {
+    width: 500px;
+    font-size: 18px;
+}
+.uppercase {
+    margin-top: 10px;
+    color: green;
+}
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+    padding: 150px 200px;
+    background-color: white;
+}
+.h4 {
+    font-weight: bold;
+    font-size: 25px;
+}
+.highlight {
+    width: 400px;
+    font-size: 18px;
+}
+.h2 {
+    font-weight: 700;
+    font-size: 70px;
+    padding-left: 160px;
+    padding-top: 120px;
+}
+.footer {
+    display: grid;
+    padding: 70px 400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: black;
+}
+.button {
+    background-color: #1fe374;
+    border: 1px solid black;
+    padding: 15px;
+    margin-top: 30px;
+}
+.button:hover {
+box-shadow: 10px 10px 5px gray;
+}
+.lists {
+    color: white;
+}
+.footer-title {
+    color: white;
+}
+ .hold, .join {
+    list-style-type: none;
+    color: #1fe374;
+}
+.footer-items {
+    margin-left: 40px
+}
+.footer-block, .font-normal {
+    width: 400px;
+    margin-top: 30px;
+    color: gray
+}
