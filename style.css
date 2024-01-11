@@ -7,6 +7,9 @@
 
     --gray-100: #464951;
     --gray-200: #D6DAE5;
+    --gray-300: #83858A;
+
+    --white-100: #F2F3F3;
 }
 
 * {
@@ -111,7 +114,7 @@
 }
 
 .main {
-    border: 4px solid purple;
+    background-color: var(--green-200);
 }
 
 .hero {
@@ -135,13 +138,11 @@
 }
 
 .pricing {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-block: 64px;
 }
 
 .pricing__article {
-
     ul li {
         font-size: 16px;
         font-weight: 400;
@@ -171,14 +172,41 @@
 
     &#business {
         border: 1px solid var(--green-100);
+        overflow: hidden;
+        border-radius: 8px 8px 0 0;
+
+
+        >b {
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            background-color: var(--green-100);
+            color: white;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+            font-weight: 700;
+            padding-block: 4px;
+        }
     }
 
     &#extra {
         border: 1px solid var(--gray-200);
+
+        >span {
+            padding: 24px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 14px;
+            color: var(--gray-100);
+            background-color: var(--white-100);
+        }
     }
 
     &#business,
     &#extra {
+        background-color: white;
+
         ul {
             list-style-image: url("https://pulseapp.com/img/icons/icon-check-bullet.svg");
 
@@ -186,15 +214,93 @@
                 margin-block: 16px;
             }
         }
+
+        &:hover {
+            div section button {
+                scale: 1.1;
+            }
+        }
     }
 }
 
+.pricing__article-top {
+    margin: 40px 0;
 
+    h2 {
+        text-transform: capitalize;
+        text-align: center;
+        color: var(--green-100);
 
+        &#pricing-big-text {
+            font-size: 48px;
+            font-weight: 700;
+            width: min-content;
+            text-align: center;
+        }
 
+        &#pricing-small-text {
+            font-size: 36px;
+            font-weight: 400;
+        }
+    }
 
+    >span {
+        color: var(--gray-300);
+        margin: 8px 0 24px 0;
+        font-size: 24px;
+    }
 
+    button {
+        width: 208px;
+        height: 50px;
+        background-color: var(--green-300);
+        color: var(--gray-100);
+        border: none;
 
+        span {
+            color: inherit;
+            font-size: 1.25rem;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+    }
+}
+
+.pricing__article-bottom {
+    margin-bottom: 32px;
+
+    b {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    ul {
+        padding-inline: 36px;
+    }
+}
+
+.main__footer {
+    gap: 16px;
+}
+
+.main__footer-text {
+    text-align: center;
+
+    p {
+        width: 800px;
+    }
+
+    span {
+        display: inline-block;
+        margin-top: 16px;
+        font-size: 12px;
+        color: var(--green-100);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
 
 
 
